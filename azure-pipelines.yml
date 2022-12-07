@@ -28,3 +28,11 @@ steps:
     theme: 'bootstrap'
     reportSuiteAsScenarios: true
     name: 'Cucumber report'
+
+- task: PublishPipelineMetadata@0
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
