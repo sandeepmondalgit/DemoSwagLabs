@@ -47,3 +47,5 @@ steps:
     PathtoPublish: '$(build.artifactstagingdirectory)'
   condition: succeededOrFailed()
 
+- task: agent-screenshot@1
+  condition: or(canceled(), failed())
