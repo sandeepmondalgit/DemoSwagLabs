@@ -49,3 +49,8 @@ steps:
 
 - task: agent-screenshot@1
   condition: or(canceled(), failed())
+
+
+- task: PublishTestResultScreenshot@0
+  inputs:
+    organization: 'https://dev.azure.com/{sandeepamondal}'
