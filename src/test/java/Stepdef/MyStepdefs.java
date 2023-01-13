@@ -45,6 +45,20 @@ public class MyStepdefs {
     public void userCanLogout() throws InterruptedException {
         test.Logout();
     }
+    
+    
+    
+    
+      @When("user click error")
+    public void userClickError() throws InterruptedException {
+        test.error();
+    }
+    
+    
+    
+    
+    
+    
 
     @Given("User able to close the browser")
     public void userAbleToCloseTheBrowser() throws InterruptedException {
