@@ -15,17 +15,7 @@ Feature: SwagLabs
   @Regression
   Scenario: user logout
     When User back to homepage
-    Then User can logout
-    
-    
-    
-  @Smoke
-  Scenario: error
-    When user click error
-    
-    
-    
-    
+    Then User can logout   
   @Smoke
   Scenario: close browser
     Given User able to close the browser
