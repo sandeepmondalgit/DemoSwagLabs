@@ -57,15 +57,6 @@ public class SwaglabsMain {
         Thread.sleep(2000);
         driver.findElement(By.id("logout_sidebar_link")).click();
     }
-    
-    
-     public void error() throws InterruptedException {
-        driver.findElement(By.id("eroor")).click();
-    }
-
-    
-    
-    
 
     public void Quit() throws InterruptedException {
         driver.quit();
